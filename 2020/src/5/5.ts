@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 const input = fs.readFileSync('./input.txt', 'utf-8');
 const binary = _.replace(_.replace(input, /[F,L]/g, '0'), /[B,R]/g, '1');
